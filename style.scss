@@ -1,0 +1,257 @@
+body {
+  margin: unset;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #bf0b0e;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#main {
+  display: flex;
+  #title-background {
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("./img/traffic-332857_1920.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    p {
+      align-items: unset;
+      margin-left: 20px;
+      color: white;
+      font-size: 32px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+
+      #form-box {
+        background-color: #f0f0f0d5;
+
+        border: 1px solid;
+        padding: 25px;
+        flex-wrap: wrap;
+
+        .text-form-box {
+          display: flex;
+          justify-content: center;
+
+          p {
+            color: black;
+            font-size: 32px;
+            width: 50%;
+            text-align: center;
+            margin: unset;
+          }
+        }
+
+        .form {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-top: 30px;
+
+          input,
+          select {
+            width: 200px;
+            height: 25px;
+            background-color: white;
+          }
+        }
+
+        .calculate-button {
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+          margin-bottom: 20px;
+
+          button {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            border-radius: 21px;
+            width: 149px;
+            padding: 9px 34px;
+          }
+        }
+
+        .info-calc {
+          display: flex;
+          justify-content: center;
+          color: green;
+          font-size: 25px;
+          margin: unset;
+        }
+      }
+    }
+  }
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  align-items: center;
+  text-align: center;
+  margin-top: unset;
+
+  h1 {
+    margin-bottom: unset;
+    margin-top: 35px;
+  }
+
+  p {
+    margin-top: unset;
+  }
+}
+
+#parent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 60px 40px;
+
+  .fa-check {
+    color: rgb(50, 223, 208);
+  }
+
+  #left,
+  #right {
+    border: 1px solid lightgray;
+    border-top: 3px solid black;
+    padding: 10px 20px;
+
+    h3 {
+      margin-bottom: unset;
+      color: darkslateblue;
+    }
+
+    p {
+      margin-top: unset;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    hr {
+      border-color: #8080802e;
+    }
+
+    .buttom-box {
+      .title-buttom {
+        font-weight: bold;
+        margin-bottom: unset;
+        margin-top: 16px;
+      }
+      .title-text {
+        width: 300px;
+        color: #0000006e;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  .img-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #main {
+    #title-background {
+      .box {
+        #form-box {
+          .form {
+            input,
+            select {
+              width: 150px;
+            }
+          }
+          .info-calc {
+            margin: unset;
+          }
+          .text-form-box {
+            p {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 688px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 764px) {
+  #parent {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+
+    #left,
+    #right {
+      margin-top: 20px;
+    }
+  }
+}

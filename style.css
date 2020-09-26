@@ -1,0 +1,321 @@
+body {
+  margin: unset;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #bf0b0e;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #title-background {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("./img/traffic-332857_1920.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+#main #title-background p {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  margin-left: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+#main #title-background .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #title-background .box #form-box {
+  background-color: #f0f0f0d5;
+  border: 1px solid;
+  padding: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main #title-background .box #form-box .text-form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #title-background .box #form-box .text-form-box p {
+  color: black;
+  font-size: 32px;
+  width: 50%;
+  text-align: center;
+  margin: unset;
+}
+
+#main #title-background .box #form-box .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#main #title-background .box #form-box .form input,
+#main #title-background .box #form-box .form select {
+  width: 200px;
+  height: 25px;
+  background-color: white;
+}
+
+#main #title-background .box #form-box .calculate-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#main #title-background .box #form-box .calculate-button button {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  border-radius: 21px;
+  width: 149px;
+  padding: 9px 34px;
+}
+
+#main #title-background .box #form-box .info-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: green;
+  font-size: 25px;
+  margin: unset;
+}
+
+.text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: darkgrey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: unset;
+}
+
+.text-box h1 {
+  margin-bottom: unset;
+  margin-top: 35px;
+}
+
+.text-box p {
+  margin-top: unset;
+}
+
+#parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 60px 40px;
+}
+
+#parent .fa-check {
+  color: #32dfd0;
+}
+
+#parent #left,
+#parent #right {
+  border: 1px solid lightgray;
+  border-top: 3px solid black;
+  padding: 10px 20px;
+}
+
+#parent #left h3,
+#parent #right h3 {
+  margin-bottom: unset;
+  color: darkslateblue;
+}
+
+#parent #left p,
+#parent #right p {
+  margin-top: unset;
+}
+
+#parent #left li,
+#parent #right li {
+  margin: 10px 0;
+}
+
+#parent #left hr,
+#parent #right hr {
+  border-color: #8080802e;
+}
+
+#parent #left .buttom-box .title-buttom,
+#parent #right .buttom-box .title-buttom {
+  font-weight: bold;
+  margin-bottom: unset;
+  margin-top: 16px;
+}
+
+#parent #left .buttom-box .title-text,
+#parent #right .buttom-box .title-text {
+  width: 300px;
+  color: #0000006e;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer .img-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .img-footer img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  #main #title-background .box #form-box .form input,
+  #main #title-background .box #form-box .form select {
+    width: 150px;
+  }
+  #main #title-background .box #form-box .info-calc {
+    margin: unset;
+  }
+  #main #title-background .box #form-box .text-form-box p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 688px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: unset;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 764px) {
+  #parent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  #parent #left,
+  #parent #right {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CF_Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./img//logo.png" />
+      </div>
+      <div><img src="./img/banner.png" /></div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </nav>
+
+    <div id="main">
+      <div id="title-background">
+        <p>Car insurance</p>
+        <div class="box">
+          <div id="form-box">
+            <div>
+              <div class="text-form-box">
+                <p>Great coverage begins with a custom quote</p>
+              </div>
+              <div class="form">
+                <div>
+                  <label for="username">Your name:</label><br />
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div>
+                  <label for="username">Age:</label><br />
+                  <input type="number" id="age" name="age" />
+                </div>
+              </div>
+              <div class="form">
+                <div>
+                  <label for="country">Country:</label><br />
+                  <select name="country" id="country">
+                    <option value="a">Austria</option>
+                    <option value="h">Hungary</option>
+                    <option value="g">Greece</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="username">Horsepower of your car:</label><br />
+                  <input type="number" id="HPCar" name="HPCar" />
+                </div>
+              </div>
+            </div>
+            <div class="calculate-button">
+              <button onclick="calculateInsurance()">Calculate</button>
+            </div>
+            <div>
+              <p id="answer" class="info-calc">
+                Printend calculation goes here
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-box">
+      <h1>Un-complicating car coverage</h1>
+      <p>
+        Understanding your coverage options shouldn't be so hard.<br />
+        We'll guide you through avaible coverage types, <br />starting with who
+        and what is covered.
+      </p>
+    </div>
+
+    <div id="parent">
+      <div id="left">
+        <h3>What comes standard</h3>
+        <p>The coverage you need</p>
+        <div>
+          <ul class="fa-ul customstyle">
+            <li><i class="fas fa-check fa-li"></i> Bodily Injury Liability</li>
+            <li><i class="fas fa-check fa-li"></i> Property Damage</li>
+            <li><i class="fas fa-check fa-li"></i> Medical Payments</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="buttom-box">
+          <p class="title-buttom">Benefits</p>
+          <p class="title-text">
+            12-month rate guarantee | 24/7 customer service | Lifetime Repair
+            Guarantee
+          </p>
+        </div>
+      </div>
+      <div id="right">
+        <h3>Add-on protection & coverage</h3>
+        <p>For more peace of mind</p>
+        <div>
+          <ul class="fa-ul customstyle">
+            <li><i class="fas fa-check fa-li"></i> Better Car Replacement</li>
+            <li><i class="fas fa-check fa-li"></i> Towing & Labor</li>
+            <li><i class="fas fa-check fa-li"></i> Rental Car Coverage</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="buttom-box">
+          <p class="title-buttom">Earned Benefits</p>
+          <p class="title-text">
+            Accident Forgiveness<sup>1</sup> | New Car Replacement<sup>TM</sup>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav id="footer-nav">
+        <ul style="background-color: black">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav>
+
+      <div class="img-footer">
+        <div>
+          <img src="./img/logo-inv.png" />
+        </div>
+      </div>
+      <p>Tuelay Sahin - Codefactory 2020</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
